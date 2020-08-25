@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="15fea9a2-6e8f-4229-badc-c988fb221e50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoapp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/todoapp/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,66 +78,74 @@
       <option name="project" value="LOCAL" />
       <updated>1598274916743</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CRUD api ready">
+      <created>1598330868752</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598330868752</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="User authentication done" />
-    <option name="LAST_COMMIT_MESSAGE" value="User authentication done" />
+    <MESSAGE value="CRUD api ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD api ready" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597895128454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1597895128454" />
-    <state x="614" y="111" key="CommitChangelistDialog2" timestamp="1598274916266">
+    <state x="614" y="111" width="1088" height="901" key="CommitChangelistDialog2" timestamp="1598330868302">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="111" key="CommitChangelistDialog2/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598274916266" />
+    <state x="614" y="111" width="1088" height="901" key="CommitChangelistDialog2/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598330868302" />
     <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1598267347943">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598267347943" />
-    <state width="1914" height="310" key="GridCell.Tab.0.bottom" timestamp="1598330451194">
+    <state width="1914" height="310" key="GridCell.Tab.0.bottom" timestamp="1598335167118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1914" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598330451194" />
-    <state width="1914" height="310" key="GridCell.Tab.0.center" timestamp="1598330451194">
+    <state width="1914" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598335167118" />
+    <state width="1914" height="310" key="GridCell.Tab.0.center" timestamp="1598335167118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1914" height="310" key="GridCell.Tab.0.center/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598330451194" />
-    <state width="1914" height="310" key="GridCell.Tab.0.left" timestamp="1598330451194">
+    <state width="1914" height="310" key="GridCell.Tab.0.center/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598335167118" />
+    <state width="1914" height="310" key="GridCell.Tab.0.left" timestamp="1598335167118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1914" height="310" key="GridCell.Tab.0.left/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598330451194" />
-    <state width="1914" height="310" key="GridCell.Tab.0.right" timestamp="1598330451194">
+    <state width="1914" height="310" key="GridCell.Tab.0.left/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598335167118" />
+    <state width="1914" height="310" key="GridCell.Tab.0.right" timestamp="1598335167118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1914" height="310" key="GridCell.Tab.0.right/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598330451194" />
-    <state width="1914" height="310" key="GridCell.Tab.1.bottom" timestamp="1598330481902">
+    <state width="1914" height="310" key="GridCell.Tab.0.right/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598335167118" />
+    <state width="1914" height="310" key="GridCell.Tab.1.bottom" timestamp="1598335150369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1914" height="310" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598330481902" />
-    <state width="1914" height="310" key="GridCell.Tab.1.center" timestamp="1598330481902">
+    <state width="1914" height="310" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598335150369" />
+    <state width="1914" height="310" key="GridCell.Tab.1.center" timestamp="1598335150369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1914" height="310" key="GridCell.Tab.1.center/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598330481902" />
-    <state width="1914" height="310" key="GridCell.Tab.1.left" timestamp="1598330481902">
+    <state width="1914" height="310" key="GridCell.Tab.1.center/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598335150369" />
+    <state width="1914" height="310" key="GridCell.Tab.1.left" timestamp="1598335150369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1914" height="310" key="GridCell.Tab.1.left/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598330481902" />
-    <state width="1914" height="310" key="GridCell.Tab.1.right" timestamp="1598330481902">
+    <state width="1914" height="310" key="GridCell.Tab.1.left/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598335150369" />
+    <state width="1914" height="310" key="GridCell.Tab.1.right" timestamp="1598335150369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1914" height="310" key="GridCell.Tab.1.right/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598330481902" />
+    <state width="1914" height="310" key="GridCell.Tab.1.right/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598335150369" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1597895107214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1597895107214" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598274918295">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598330871218">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598274918295" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1598330871218" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1598262388715">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -149,21 +154,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/api/api.py</url>
           <line>13</line>
@@ -210,209 +200,34 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>51</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>52</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>60</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>64</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/api/serializers.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/serializers.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/serializers.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/serializers.py</url>
-          <line>26</line>
+          <line>27</line>
           <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>55</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>44</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>45</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>46</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/serializers.py</url>
-          <line>21</line>
-          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/api/serializers.py</url>
           <line>22</line>
-          <option name="timeStamp" value="61" />
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/api/serializers.py</url>
           <line>23</line>
-          <option name="timeStamp" value="62" />
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/api/serializers.py</url>
           <line>24</line>
-          <option name="timeStamp" value="63" />
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/api/serializers.py</url>
           <line>25</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/api/serializers.py</url>
+          <line>26</line>
           <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>62</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>63</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>66</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>70</line>
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>71</line>
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>73</line>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>75</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>72</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/api/views.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

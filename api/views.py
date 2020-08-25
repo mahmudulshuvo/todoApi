@@ -31,46 +31,55 @@ class TaskView(APIView):
     permission_classes = (AllowAny, )
 
     def get(self, request):
-        if request.user.is_anonymous:
-            return Response("Anonymous user", status=status.HTTP_400_BAD_REQUEST)
+        try:
+            if request.user.is_anonymous:
+                return Response("Anonymous user", status=status.HTTP_400_BAD_REQUEST)
 
-        tasks = Task.objects.filter(user=request.user)
-        serializer = TaskSerializer(tasks, many=True)
-        return Response({"tasks": serializer.data}, status=status.HTTP_200_OK)
+            tasks = Task.objects.filter(user=request.user)
+            serializer = TaskSerializer(tasks, many=True)
+            return Response({"tasks": serializer.data}, status=status.HTTP_200_OK)
+
+        except Exception as e:
+            return Response("Failed "+str(e), status=status.HTTP_400_BAD_REQUEST)
 
     def post(self, request):
-        if request.user.is_anonymous:
-            return Response("Anonymous user", status=status.HTTP_400_BAD_REQUEST)
+        try:
+            if request.user.is_anonymous:
+                return Response("Anonymous user", status=status.HTTP_400_BAD_REQUEST)
+            task = request.data.get('task')
+            task_serializer = TaskSerializer(data=task)
+            if task_serializer.is_valid(raise_exception=True):
+                task_saved = task_serializer.create(task, request.user)
+            return Response({"id": task_saved.id, "title": task_saved.title, "completed": task_saved.completed, "user_id": task_saved.user_id}, status=status.HTTP_201_CREATED)
 
-        task = {
-            'title': request.data.get('title'),
-            'completed': request.data.get('completed'),
-        }
-
-        task_serializer = TaskSerializer(data=task)
-        if task_serializer.is_valid(raise_exception=True):
-            task_saved = task_serializer.create(task, request.user)
-        return Response({"id": task_saved.id, "title": task_saved.title, "completed": task_saved.completed, "user_id": task_saved.user_id}, status=status.HTTP_201_CREATED)
+        except Exception as e:
+            return Response("Failed " + str(e), status=status.HTTP_400_BAD_REQUEST)
 
     def put(self, request, pk):
-        if request.user.is_anonymous:
-            return Response("Anonymous user", status=status.HTTP_400_BAD_REQUEST)
+        try:
+            if request.user.is_anonymous:
+                return Response("Anonymous user", status=status.HTTP_400_BAD_REQUEST)
 
-        saved_task = get_object_or_404(Task.objects.all(), pk=pk)
-        if saved_task.user == request.user:
-            data = request.data.get('task')
-            serializer = TaskSerializer(instance=saved_task, data=data, partial=True)
-            if serializer.is_valid(raise_exception=True):
-                task_saved = serializer.save()
-            return Response({"id": task_saved.id, "title": task_saved.title, "completed": task_saved.completed}, status=status.HTTP_200_OK)
-        else:
-            return Response("User is not allowed to change the task ",status=status.HTTP_403_FORBIDDEN)
+            saved_task = get_object_or_404(Task.objects.all(), pk=pk)
+            if saved_task.user == request.user:
+                serializer = TaskSerializer(instance=saved_task, data=request.data.get('task'), partial=True)
+                if serializer.is_valid(raise_exception=True):
+                    task_saved = serializer.save()
+                return Response({"id": task_saved.id, "title": task_saved.title, "completed": task_saved.completed}, status=status.HTTP_200_OK)
+            else:
+                return Response("User is not allowed to change the task ",status=status.HTTP_403_FORBIDDEN)
+
+        except Exception as e:
+            return Response("Failed " + str(e), status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, pk):
-        # Get object with this pk
-        task = get_object_or_404(Task.objects.all(), pk=pk)
-        if task.user == request.user:
-            task.delete()
-            return Response("Task deleted", status=204)
-        else:
-            return Response("User is not allowed to delete the task ", status=status.HTTP_403_FORBIDDEN)
+        try:
+            task = get_object_or_404(Task.objects.all(), pk=pk)
+            if task.user == request.user:
+                task.delete()
+                return Response("Task deleted", status=204)
+            else:
+                return Response("User is not allowed to delete the task ", status=status.HTTP_403_FORBIDDEN)
+
+        except Exception as e:
+            return Response("Failed " + str(e), status=status.HTTP_400_BAD_REQUEST)

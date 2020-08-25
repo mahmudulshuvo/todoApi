@@ -15,6 +15,7 @@ class UserSerializer(serializers.Serializer):
 
 
 class TaskSerializer(serializers.Serializer):
+    id = serializers.IntegerField(read_only=True)
     title = serializers.CharField(max_length=200)
     completed = serializers.BooleanField()
 
