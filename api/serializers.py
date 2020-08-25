@@ -1,6 +1,8 @@
 # Serializers define the API representation.
 from rest_framework import serializers
 from django.contrib.auth.models import User
+from .models import Task
+
 
 class UserSerializer(serializers.Serializer):
     class Meta:
@@ -10,4 +12,25 @@ class UserSerializer(serializers.Serializer):
     def create(self, validated_data):
         user = User(**validated_data)
         return user
+
+
+class TaskSerializer(serializers.Serializer):
+    title = serializers.CharField(max_length=200)
+    completed = serializers.BooleanField()
+
+    def create(self, validated_data, user):
+        task = Task()
+        task.user = user
+        task.title = validated_data.get('title')
+        task.completed = validated_data.get('completed')
+        task.save()
+        return task
+
+    def update(self, instance, validated_data):
+        instance.title = validated_data.get('title', instance.title)
+        instance.completed = validated_data.get('completed', instance.completed)
+        instance.user_id = validated_data.get('user_id', instance.user_id)
+
+        instance.save()
+        return instance
 
